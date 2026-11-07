@@ -1,0 +1,31 @@
+# === Stale uncompressed source images (kept locally only) ===
+# The build pipeline outputs optimized .jpg only; non-jpg files in
+# assets/projects are uncompressed originals and must NOT be committed.
+# NOTE: only lowercase patterns — Windows git is case-insensitive, so
+# adding *.JPG would also ignore the compressed *.jpg we want to keep.
+assets/projects/**/*.png
+assets/projects/**/*.jpeg
+assets/projects/**/*.webp
+assets/projects/**/*.bmp
+assets/projects/**/*.gif
+assets/projects/**/*.tiff
+
+# === Build tooling (not part of the deployed site) ===
+build_data.py
+__pycache__/
+*.pyc
+
+# === OS / Editor ===
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# === Logs / Temp ===
+*.log
+tmp/
+.tmp/

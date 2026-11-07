@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>项目详情 · 啊lei啊lei 2026 作品集</title>
+<meta name="description" content="啊lei啊lei 作品项目详情 — 大健康产品视觉设计交付。">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23070a0d'/><text x='50' y='68' font-size='52' font-family='monospace' font-weight='bold' text-anchor='middle' fill='%2322d3ee'>ALL</text></svg>">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="logo">ALL</span>
+      <span class="sub">/ 啊lei啊lei · HEALTH VISUAL · 2026</span>
+    </a>
+    <div class="menu" id="menu">
+      <a href="index.html">首页</a>
+      <a href="category.html">作品分类</a>
+      <a href="about.html">关于我</a>
+      <a href="contact.html">联系</a>
+      <a href="category.html" class="btn-pdf">浏览全部 →</a>
+    </div>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="detail-head">
+  <div class="wrap">
+    <a href="javascript:history.back()" class="back mono">← 返回列表</a>
+    <div id="d-title">
+      <div class="loader"><div class="spin"></div> 加载项目中…</div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="detail-grid" id="d-grid"></div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="copy">啊lei啊lei © 2026 · HEALTH PRODUCT VISUAL · ALL RIGHTS RESERVED</div>
+    <div class="flinks">
+      <a href="index.html">首页</a>
+      <a href="category.html">作品</a>
+      <a href="about.html">关于</a>
+      <a href="contact.html">联系</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+<script>
+PORTFOLIO.ready(function () {
+  const D = PORTFOLIO.data;
+  const id = new URLSearchParams(location.search).get('id');
+  const p = id ? PORTFOLIO.get(id) : null;
+  const titleEl = document.getElementById('d-title');
+  const grid = document.getElementById('d-grid');
+
+  if (!p) {
+    titleEl.innerHTML = '<h1 style="margin-top:18px">项目未找到</h1><div class="sub">PROJECT NOT FOUND</div>';
+    grid.innerHTML = '<div class="empty">该项目不存在或链接有误。<br><br><a href="category.html" class="btn btn-ghost">← 返回作品列表</a></div>';
+    PORTFOLIO.initNav();
+    return;
+  }
+
+  const cat = PORTFOLIO.catMeta(p.category);
+  document.title = p.name + ' · 啊lei啊lei 2026 作品集';
+
+  // find next/prev within same category
+  const sibs = D.projects.filter(function (x) { return x.category === p.category; });
+  const idx = sibs.findIndex(function (x) { return x.id === p.id; });
+  const prev = sibs[idx - 1];
+  const next = sibs[idx + 1];
+
+  titleEl.innerHTML =
+    '<h1>' + PORTFOLIO.esc(p.name) + '</h1>' +
+    '<div class="sub">' + p.id.toUpperCase() + ' <span class="sep">/</span> ' + cat.name + ' · ' + cat.name_en +
+      (p.subcategory ? ' <span class="sep">/</span> ' + PORTFOLIO.esc(p.subcategory) : '') + '</div>';
+
+  const sideHtml =
+    '<aside class="detail-side">' +
+      '<div class="info-card">' +
+        '<div class="ttl">// PROJECT META</div>' +
+        '<div class="ik"><span class="k">项目编号</span><span class="v">' + p.id.toUpperCase() + '</span></div>' +
+        '<div class="ik"><span class="k">所属分类</span><span class="v">' + cat.name + '</span></div>' +
+        (p.subcategory ? '<div class="ik"><span class="k">子分类</span><span class="v">' + PORTFOLIO.esc(p.subcategory) + '</span></div>' : '') +
+        '<div class="ik"><span class="k">展示视觉</span><span class="v">' + p.images.length + ' 张</span></div>' +
+        '<div class="ik"><span class="k">原始素材</span><span class="v">' + p.total_files + ' 张</span></div>' +
+        '<div class="ik"><span class="k">设计师</span><span class="v">啊lei啊lei</span></div>' +
+        '<div class="ik"><span class="k">交付类型</span><span class="v">包装 / 主图</span></div>' +
+      '</div>' +
+      '<div class="info-card" style="margin-top:16px">' +
+        '<div class="ttl">// NAVIGATE</div>' +
+        (prev ? '<a class="ik" style="display:block" href="project.html?id=' + encodeURIComponent(prev.id) + '"><span class="k">← 上一个</span><span class="v" style="color:var(--cyan)">' + PORTFOLIO.esc(prev.name) + '</span></a>' : '<div class="ik"><span class="k">← 上一个</span><span class="v" style="color:var(--txt-dim)">无</span></div>') +
+        (next ? '<a class="ik" style="display:block" href="project.html?id=' + encodeURIComponent(next.id) + '"><span class="k">下一个 →</span><span class="v" style="color:var(--cyan)">' + PORTFOLIO.esc(next.name) + '</span></a>' : '<div class="ik"><span class="k">下一个 →</span><span class="v" style="color:var(--txt-dim)">无</span></div>') +
+        '<a class="ik" style="display:block" href="category.html?category=' + p.category + '"><span class="k">分类列表</span><span class="v" style="color:var(--cyan)">查看全部 →</span></a>' +
+      '</div>' +
+    '</aside>';
+
+  const mainHtml = p.images.map(function (src, i) {
+    return '<figure><img src="' + src + '" alt="' + PORTFOLIO.esc(p.name) + ' · ' + (i + 1) + '" loading="' + (i === 0 ? 'eager' : 'lazy') + '"></figure>';
+  }).join('');
+
+  grid.innerHTML = '<div class="detail-main">' + mainHtml + '</div>' + sideHtml;
+
+  PORTFOLIO.initNav();
+});
+</script>
+</body>
+</html>
