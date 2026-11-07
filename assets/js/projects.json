@@ -3,72 +3,165 @@
     {
       "id": "zubao",
       "name": "足浴包",
+      "folder": "足浴包",
       "name_en": "Foot Bath Packs",
       "desc": "草本足浴 / 泡脚包 / 泡浴包",
-      "count": 12
+      "count": 12,
+      "subcategories": []
     },
     {
       "id": "cha",
       "name": "茶",
+      "folder": "茶",
       "name_en": "Herbal Tea",
       "desc": "养生茶饮配方与包装",
-      "count": 2
+      "count": 2,
+      "subcategories": []
     },
     {
       "id": "ganghuo",
       "name": "港货",
+      "folder": "港货",
       "name_en": "Hong Kong Remedies",
       "desc": "经典港式药油系列",
-      "count": 5
+      "count": 5,
+      "subcategories": []
     },
     {
       "id": "waimao",
       "name": "外贸",
+      "folder": "外贸",
       "name_en": "Foreign Trade",
       "desc": "跨境出口产品视觉",
-      "count": 15
+      "count": 15,
+      "subcategories": [
+        {
+          "id": "NS",
+          "name": "NS"
+        },
+        {
+          "id": "NP",
+          "name": "NP"
+        },
+        {
+          "id": "其他",
+          "name": "其他"
+        }
+      ]
     },
     {
       "id": "feiyi",
       "name": "非遗",
+      "folder": "非遗",
       "name_en": "Intangible Heritage",
       "desc": "非遗品牌联名合作",
-      "count": 14
+      "count": 14,
+      "subcategories": [
+        {
+          "id": "谢锡亮",
+          "name": "谢锡亮"
+        },
+        {
+          "id": "李氏正骨",
+          "name": "李氏正骨"
+        },
+        {
+          "id": "藏雀灵",
+          "name": "藏雀灵"
+        },
+        {
+          "id": "小狮父",
+          "name": "小狮父"
+        }
+      ]
     },
     {
       "id": "refu",
       "name": "热敷&按摩仪器",
+      "folder": "热敷&按摩仪器",
       "name_en": "Hot Compress & Devices",
       "desc": "热敷垫 / 艾灸仪 / 按摩器",
-      "count": 9
+      "count": 9,
+      "subcategories": [
+        {
+          "id": "热敷",
+          "name": "热敷"
+        },
+        {
+          "id": "按摩仪器",
+          "name": "按摩仪器"
+        }
+      ]
     },
     {
       "id": "gaotie",
-      "name": "膏&丸&贴&液",
+      "name": "膏/丸/贴/液",
+      "folder": "膏&丸&贴&液",
       "name_en": "Ointment · Patch · Liquid",
       "desc": "膏 / 丸 / 贴 / 液 全剂型",
-      "count": 27
+      "count": 27,
+      "subcategories": [
+        {
+          "id": "膏",
+          "name": "膏"
+        },
+        {
+          "id": "丸",
+          "name": "丸"
+        },
+        {
+          "id": "贴",
+          "name": "贴"
+        },
+        {
+          "id": "液",
+          "name": "液"
+        }
+      ]
     },
     {
       "id": "yanzhao",
       "name": "眼罩",
+      "folder": "眼罩",
       "name_en": "Steam Eye Masks",
       "desc": "蒸汽热敷眼罩系列",
-      "count": 4
+      "count": 4,
+      "subcategories": []
     },
     {
       "id": "jingyou",
       "name": "精油",
+      "folder": "精油",
       "name_en": "Essential Oils",
       "desc": "草本养护精油 / 凝珠",
-      "count": 2
+      "count": 2,
+      "subcategories": []
     },
     {
       "id": "lianhe",
       "name": "其他联合创作",
+      "folder": "其他联合创作",
       "name_en": "Collaborations",
       "desc": "品牌联合创作项目",
-      "count": 14
+      "count": 14,
+      "subcategories": [
+        {
+          "id": "养小全",
+          "name": "养小全"
+        },
+        {
+          "id": "葵花",
+          "name": "葵花"
+        },
+        {
+          "id": "赛伦博士",
+          "name": "赛伦博士"
+        },
+        {
+          "id": "其他",
+          "name": "其他"
+        }
+      ]
     }
   ],
   "projects": [
@@ -77,6 +170,7 @@
       "category": "zubao",
       "category_name": "足浴包",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "24味儿童泡浴包",
       "thumb": "assets/projects/zubao/zubao-01/zubao-01-1.jpg",
       "images": [
@@ -84,13 +178,14 @@
         "assets/projects/zubao/zubao-01/zubao-01-2.jpg",
         "assets/projects/zubao/zubao-01/zubao-01-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "zubao-02",
       "category": "zubao",
       "category_name": "足浴包",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "乐消消儿童泡浴包",
       "thumb": "assets/projects/zubao/zubao-02/zubao-02-1.jpg",
       "images": [
@@ -98,54 +193,61 @@
         "assets/projects/zubao/zubao-02/zubao-02-2.jpg",
         "assets/projects/zubao/zubao-02/zubao-02-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "zubao-03",
       "category": "zubao",
       "category_name": "足浴包",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "姜艾花椒足浴粉",
       "thumb": "assets/projects/zubao/zubao-03/zubao-03-1.jpg",
       "images": [
         "assets/projects/zubao/zubao-03/zubao-03-1.jpg",
         "assets/projects/zubao/zubao-03/zubao-03-2.jpg",
-        "assets/projects/zubao/zubao-03/zubao-03-3.jpg"
+        "assets/projects/zubao/zubao-03/zubao-03-3.jpg",
+        "assets/projects/zubao/zubao-03/zubao-03-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "zubao-04",
       "category": "zubao",
       "category_name": "足浴包",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "寒汗眠湿·二十八味足浴包",
       "thumb": "assets/projects/zubao/zubao-04/zubao-04-1.jpg",
       "images": [
         "assets/projects/zubao/zubao-04/zubao-04-1.jpg",
         "assets/projects/zubao/zubao-04/zubao-04-2.jpg",
-        "assets/projects/zubao/zubao-04/zubao-04-3.jpg"
+        "assets/projects/zubao/zubao-04/zubao-04-3.jpg",
+        "assets/projects/zubao/zubao-04/zubao-04-4.jpg",
+        "assets/projects/zubao/zubao-04/zubao-04-5.jpg"
       ],
-      "total_files": 5
+      "image_count": 5
     },
     {
       "id": "zubao-05",
       "category": "zubao",
       "category_name": "足浴包",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "寒湿无忧泡脚包",
       "thumb": "assets/projects/zubao/zubao-05/zubao-05-1.jpg",
       "images": [
         "assets/projects/zubao/zubao-05/zubao-05-1.jpg",
         "assets/projects/zubao/zubao-05/zubao-05-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "zubao-06",
       "category": "zubao",
       "category_name": "足浴包",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "感咳热、脾湿胀、矮挑瘦",
       "thumb": "assets/projects/zubao/zubao-06/zubao-06-1.jpg",
       "images": [
@@ -153,67 +255,75 @@
         "assets/projects/zubao/zubao-06/zubao-06-2.jpg",
         "assets/projects/zubao/zubao-06/zubao-06-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "zubao-07",
       "category": "zubao",
       "category_name": "足浴包",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "痰湿、湿寒、湿热足浴包",
       "thumb": "assets/projects/zubao/zubao-07/zubao-07-1.jpg",
       "images": [
         "assets/projects/zubao/zubao-07/zubao-07-1.jpg",
         "assets/projects/zubao/zubao-07/zubao-07-2.jpg",
-        "assets/projects/zubao/zubao-07/zubao-07-3.jpg"
+        "assets/projects/zubao/zubao-07/zubao-07-3.jpg",
+        "assets/projects/zubao/zubao-07/zubao-07-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "zubao-08",
       "category": "zubao",
       "category_name": "足浴包",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "矮挑动草本泡浴包",
       "thumb": "assets/projects/zubao/zubao-08/zubao-08-1.jpg",
       "images": [
         "assets/projects/zubao/zubao-08/zubao-08-1.jpg",
         "assets/projects/zubao/zubao-08/zubao-08-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "zubao-09",
       "category": "zubao",
       "category_name": "足浴包",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "纯艾叶",
       "thumb": "assets/projects/zubao/zubao-09/zubao-09-1.jpg",
       "images": [
         "assets/projects/zubao/zubao-09/zubao-09-1.jpg",
         "assets/projects/zubao/zubao-09/zubao-09-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "zubao-10",
       "category": "zubao",
       "category_name": "足浴包",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "艾叶生姜暖身泡浴包、茯苓半夏伏湿泡浴包、荷叶丹参纤体泡浴包、酸枣仁茯神益眠泡浴包",
       "thumb": "assets/projects/zubao/zubao-10/zubao-10-1.jpg",
       "images": [
         "assets/projects/zubao/zubao-10/zubao-10-1.jpg",
         "assets/projects/zubao/zubao-10/zubao-10-2.jpg",
-        "assets/projects/zubao/zubao-10/zubao-10-3.jpg"
+        "assets/projects/zubao/zubao-10/zubao-10-3.jpg",
+        "assets/projects/zubao/zubao-10/zubao-10-4.jpg",
+        "assets/projects/zubao/zubao-10/zubao-10-5.jpg"
       ],
-      "total_files": 5
+      "image_count": 5
     },
     {
       "id": "zubao-11",
       "category": "zubao",
       "category_name": "足浴包",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "艾姜花椒足浴包",
       "thumb": "assets/projects/zubao/zubao-11/zubao-11-1.jpg",
       "images": [
@@ -221,54 +331,62 @@
         "assets/projects/zubao/zubao-11/zubao-11-2.jpg",
         "assets/projects/zubao/zubao-11/zubao-11-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "zubao-12",
       "category": "zubao",
       "category_name": "足浴包",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "针叶樱桃足浴包",
       "thumb": "assets/projects/zubao/zubao-12/zubao-12-1.jpg",
       "images": [
         "assets/projects/zubao/zubao-12/zubao-12-1.jpg",
         "assets/projects/zubao/zubao-12/zubao-12-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "cha-13",
       "category": "cha",
       "category_name": "茶",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "参精杞脾肾双益茶",
       "thumb": "assets/projects/cha/cha-13/cha-13-1.jpg",
       "images": [
         "assets/projects/cha/cha-13/cha-13-1.jpg",
         "assets/projects/cha/cha-13/cha-13-2.jpg",
-        "assets/projects/cha/cha-13/cha-13-3.jpg"
+        "assets/projects/cha/cha-13/cha-13-3.jpg",
+        "assets/projects/cha/cha-13/cha-13-4.jpg",
+        "assets/projects/cha/cha-13/cha-13-5.jpg",
+        "assets/projects/cha/cha-13/cha-13-6.jpg"
       ],
-      "total_files": 6
+      "image_count": 6
     },
     {
       "id": "cha-14",
       "category": "cha",
       "category_name": "茶",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "蒲公英散结茶",
       "thumb": "assets/projects/cha/cha-14/cha-14-1.jpg",
       "images": [
         "assets/projects/cha/cha-14/cha-14-1.jpg",
         "assets/projects/cha/cha-14/cha-14-2.jpg",
-        "assets/projects/cha/cha-14/cha-14-3.jpg"
+        "assets/projects/cha/cha-14/cha-14-3.jpg",
+        "assets/projects/cha/cha-14/cha-14-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "ganghuo-15",
       "category": "ganghuo",
       "category_name": "港货",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "千里追风油",
       "thumb": "assets/projects/ganghuo/ganghuo-15/ganghuo-15-1.jpg",
       "images": [
@@ -276,13 +394,14 @@
         "assets/projects/ganghuo/ganghuo-15/ganghuo-15-2.jpg",
         "assets/projects/ganghuo/ganghuo-15/ganghuo-15-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "ganghuo-16",
       "category": "ganghuo",
       "category_name": "港货",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "正红花油",
       "thumb": "assets/projects/ganghuo/ganghuo-16/ganghuo-16-1.jpg",
       "images": [
@@ -290,13 +409,14 @@
         "assets/projects/ganghuo/ganghuo-16/ganghuo-16-2.jpg",
         "assets/projects/ganghuo/ganghuo-16/ganghuo-16-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "ganghuo-17",
       "category": "ganghuo",
       "category_name": "港货",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "活络油",
       "thumb": "assets/projects/ganghuo/ganghuo-17/ganghuo-17-1.jpg",
       "images": [
@@ -304,13 +424,14 @@
         "assets/projects/ganghuo/ganghuo-17/ganghuo-17-2.jpg",
         "assets/projects/ganghuo/ganghuo-17/ganghuo-17-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "ganghuo-18",
       "category": "ganghuo",
       "category_name": "港货",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "白花油",
       "thumb": "assets/projects/ganghuo/ganghuo-18/ganghuo-18-1.jpg",
       "images": [
@@ -318,13 +439,14 @@
         "assets/projects/ganghuo/ganghuo-18/ganghuo-18-2.jpg",
         "assets/projects/ganghuo/ganghuo-18/ganghuo-18-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "ganghuo-19",
       "category": "ganghuo",
       "category_name": "港货",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "驱风油",
       "thumb": "assets/projects/ganghuo/ganghuo-19/ganghuo-19-1.jpg",
       "images": [
@@ -332,13 +454,14 @@
         "assets/projects/ganghuo/ganghuo-19/ganghuo-19-2.jpg",
         "assets/projects/ganghuo/ganghuo-19/ganghuo-19-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "waimao-20",
       "category": "waimao",
       "category_name": "外贸",
       "subcategory": "NP",
+      "subcategory_name": "NP",
       "name": "乳香没药舒缓贴",
       "thumb": "assets/projects/waimao/waimao-20/waimao-20-1.jpg",
       "images": [
@@ -346,79 +469,86 @@
         "assets/projects/waimao/waimao-20/waimao-20-2.jpg",
         "assets/projects/waimao/waimao-20/waimao-20-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "waimao-21",
       "category": "waimao",
       "category_name": "外贸",
       "subcategory": "NP",
+      "subcategory_name": "NP",
       "name": "凉感护眼喷雾",
       "thumb": "assets/projects/waimao/waimao-21/waimao-21-1.jpg",
       "images": [
         "assets/projects/waimao/waimao-21/waimao-21-1.jpg",
         "assets/projects/waimao/waimao-21/waimao-21-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "waimao-22",
       "category": "waimao",
       "category_name": "外贸",
       "subcategory": "NP",
+      "subcategory_name": "NP",
       "name": "祛味喷雾",
       "thumb": "assets/projects/waimao/waimao-22/waimao-22-1.jpg",
       "images": [
         "assets/projects/waimao/waimao-22/waimao-22-1.jpg",
         "assets/projects/waimao/waimao-22/waimao-22-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "waimao-23",
       "category": "waimao",
       "category_name": "外贸",
       "subcategory": "NP",
+      "subcategory_name": "NP",
       "name": "脚臭喷雾",
       "thumb": "assets/projects/waimao/waimao-23/waimao-23-1.jpg",
       "images": [
         "assets/projects/waimao/waimao-23/waimao-23-1.jpg",
         "assets/projects/waimao/waimao-23/waimao-23-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "waimao-24",
       "category": "waimao",
       "category_name": "外贸",
       "subcategory": "NS",
+      "subcategory_name": "NS",
       "name": "关节贴",
       "thumb": "assets/projects/waimao/waimao-24/waimao-24-1.jpg",
       "images": [
         "assets/projects/waimao/waimao-24/waimao-24-1.jpg",
         "assets/projects/waimao/waimao-24/waimao-24-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "waimao-25",
       "category": "waimao",
       "category_name": "外贸",
       "subcategory": "NS",
+      "subcategory_name": "NS",
       "name": "冰感毛巾",
       "thumb": "assets/projects/waimao/waimao-25/waimao-25-1.jpg",
       "images": [
         "assets/projects/waimao/waimao-25/waimao-25-1.jpg",
         "assets/projects/waimao/waimao-25/waimao-25-2.jpg",
-        "assets/projects/waimao/waimao-25/waimao-25-3.jpg"
+        "assets/projects/waimao/waimao-25/waimao-25-3.jpg",
+        "assets/projects/waimao/waimao-25/waimao-25-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "waimao-26",
       "category": "waimao",
       "category_name": "外贸",
       "subcategory": "NS",
+      "subcategory_name": "NS",
       "name": "双头鼻吸棒",
       "thumb": "assets/projects/waimao/waimao-26/waimao-26-1.jpg",
       "images": [
@@ -426,39 +556,42 @@
         "assets/projects/waimao/waimao-26/waimao-26-2.jpg",
         "assets/projects/waimao/waimao-26/waimao-26-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "waimao-27",
       "category": "waimao",
       "category_name": "外贸",
       "subcategory": "NS",
+      "subcategory_name": "NS",
       "name": "泰国悬灸",
       "thumb": "assets/projects/waimao/waimao-27/waimao-27-1.jpg",
       "images": [
         "assets/projects/waimao/waimao-27/waimao-27-1.jpg",
         "assets/projects/waimao/waimao-27/waimao-27-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "waimao-28",
       "category": "waimao",
       "category_name": "外贸",
       "subcategory": "NS",
+      "subcategory_name": "NS",
       "name": "泰国足浴凝珠",
       "thumb": "assets/projects/waimao/waimao-28/waimao-28-1.jpg",
       "images": [
         "assets/projects/waimao/waimao-28/waimao-28-1.jpg",
         "assets/projects/waimao/waimao-28/waimao-28-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "waimao-29",
       "category": "waimao",
       "category_name": "外贸",
       "subcategory": "NS",
+      "subcategory_name": "NS",
       "name": "草本清凉贴",
       "thumb": "assets/projects/waimao/waimao-29/waimao-29-1.jpg",
       "images": [
@@ -466,67 +599,79 @@
         "assets/projects/waimao/waimao-29/waimao-29-2.jpg",
         "assets/projects/waimao/waimao-29/waimao-29-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "waimao-30",
       "category": "waimao",
       "category_name": "外贸",
       "subcategory": "NS",
+      "subcategory_name": "NS",
       "name": "除味喷雾、脚臭喷剂、防静电喷雾",
       "thumb": "assets/projects/waimao/waimao-30/waimao-30-1.jpg",
       "images": [
         "assets/projects/waimao/waimao-30/waimao-30-1.jpg",
         "assets/projects/waimao/waimao-30/waimao-30-2.jpg",
-        "assets/projects/waimao/waimao-30/waimao-30-3.jpg"
+        "assets/projects/waimao/waimao-30/waimao-30-3.jpg",
+        "assets/projects/waimao/waimao-30/waimao-30-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "waimao-31",
       "category": "waimao",
       "category_name": "外贸",
       "subcategory": "其他",
+      "subcategory_name": "其他",
       "name": "Lapzeirle 苗岭黑姜蝴蝶埋线贴",
       "thumb": "assets/projects/waimao/waimao-31/waimao-31-1.jpg",
       "images": [
         "assets/projects/waimao/waimao-31/waimao-31-1.jpg",
         "assets/projects/waimao/waimao-31/waimao-31-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "waimao-32",
       "category": "waimao",
       "category_name": "外贸",
       "subcategory": "其他",
+      "subcategory_name": "其他",
       "name": "VENSA BEAUTY 草本足浴包",
       "thumb": "assets/projects/waimao/waimao-32/waimao-32-1.jpg",
       "images": [
         "assets/projects/waimao/waimao-32/waimao-32-1.jpg",
         "assets/projects/waimao/waimao-32/waimao-32-2.jpg",
-        "assets/projects/waimao/waimao-32/waimao-32-3.jpg"
+        "assets/projects/waimao/waimao-32/waimao-32-3.jpg",
+        "assets/projects/waimao/waimao-32/waimao-32-4.jpg",
+        "assets/projects/waimao/waimao-32/waimao-32-5.jpg",
+        "assets/projects/waimao/waimao-32/waimao-32-6.jpg",
+        "assets/projects/waimao/waimao-32/waimao-32-7.jpg",
+        "assets/projects/waimao/waimao-32/waimao-32-8.jpg",
+        "assets/projects/waimao/waimao-32/waimao-32-9.jpg"
       ],
-      "total_files": 9
+      "image_count": 9
     },
     {
       "id": "waimao-33",
       "category": "waimao",
       "category_name": "外贸",
       "subcategory": "其他",
+      "subcategory_name": "其他",
       "name": "WBZ 印度肚脐贴",
       "thumb": "assets/projects/waimao/waimao-33/waimao-33-1.jpg",
       "images": [
         "assets/projects/waimao/waimao-33/waimao-33-1.jpg",
         "assets/projects/waimao/waimao-33/waimao-33-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "waimao-34",
       "category": "waimao",
       "category_name": "外贸",
       "subcategory": "其他",
+      "subcategory_name": "其他",
       "name": "狼毒抑菌膏",
       "thumb": "assets/projects/waimao/waimao-34/waimao-34-1.jpg",
       "images": [
@@ -534,13 +679,14 @@
         "assets/projects/waimao/waimao-34/waimao-34-2.jpg",
         "assets/projects/waimao/waimao-34/waimao-34-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "feiyi-35",
       "category": "feiyi",
       "category_name": "非遗",
       "subcategory": "小狮父",
+      "subcategory_name": "小狮父",
       "name": "小狮父氨糖软骨素马蹄草护膝宝",
       "thumb": "assets/projects/feiyi/feiyi-35/feiyi-35-1.jpg",
       "images": [
@@ -548,41 +694,46 @@
         "assets/projects/feiyi/feiyi-35/feiyi-35-2.jpg",
         "assets/projects/feiyi/feiyi-35/feiyi-35-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "feiyi-36",
       "category": "feiyi",
       "category_name": "非遗",
       "subcategory": "李氏正骨",
+      "subcategory_name": "李氏正骨",
       "name": "四季平安油",
       "thumb": "assets/projects/feiyi/feiyi-36/feiyi-36-1.jpg",
       "images": [
         "assets/projects/feiyi/feiyi-36/feiyi-36-1.jpg",
         "assets/projects/feiyi/feiyi-36/feiyi-36-2.jpg",
-        "assets/projects/feiyi/feiyi-36/feiyi-36-3.jpg"
+        "assets/projects/feiyi/feiyi-36/feiyi-36-3.jpg",
+        "assets/projects/feiyi/feiyi-36/feiyi-36-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "feiyi-37",
       "category": "feiyi",
       "category_name": "非遗",
       "subcategory": "李氏正骨",
+      "subcategory_name": "李氏正骨",
       "name": "正骨活络贴",
       "thumb": "assets/projects/feiyi/feiyi-37/feiyi-37-1.jpg",
       "images": [
         "assets/projects/feiyi/feiyi-37/feiyi-37-1.jpg",
         "assets/projects/feiyi/feiyi-37/feiyi-37-2.jpg",
-        "assets/projects/feiyi/feiyi-37/feiyi-37-3.jpg"
+        "assets/projects/feiyi/feiyi-37/feiyi-37-3.jpg",
+        "assets/projects/feiyi/feiyi-37/feiyi-37-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "feiyi-38",
       "category": "feiyi",
       "category_name": "非遗",
       "subcategory": "李氏正骨",
+      "subcategory_name": "李氏正骨",
       "name": "足浴液",
       "thumb": "assets/projects/feiyi/feiyi-38/feiyi-38-1.jpg",
       "images": [
@@ -590,13 +741,14 @@
         "assets/projects/feiyi/feiyi-38/feiyi-38-2.jpg",
         "assets/projects/feiyi/feiyi-38/feiyi-38-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "feiyi-39",
       "category": "feiyi",
       "category_name": "非遗",
       "subcategory": "藏雀灵",
+      "subcategory_name": "藏雀灵",
       "name": "党参八虚贴",
       "thumb": "assets/projects/feiyi/feiyi-39/feiyi-39-1.jpg",
       "images": [
@@ -604,51 +756,55 @@
         "assets/projects/feiyi/feiyi-39/feiyi-39-2.jpg",
         "assets/projects/feiyi/feiyi-39/feiyi-39-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "feiyi-40",
       "category": "feiyi",
       "category_name": "非遗",
       "subcategory": "藏雀灵",
+      "subcategory_name": "藏雀灵",
       "name": "少林宝枕",
       "thumb": "assets/projects/feiyi/feiyi-40/feiyi-40-1.jpg",
       "images": [
         "assets/projects/feiyi/feiyi-40/feiyi-40-1.jpg"
       ],
-      "total_files": 1
+      "image_count": 1
     },
     {
       "id": "feiyi-41",
       "category": "feiyi",
       "category_name": "非遗",
       "subcategory": "藏雀灵",
+      "subcategory_name": "藏雀灵",
       "name": "少林崖柏线香",
       "thumb": "assets/projects/feiyi/feiyi-41/feiyi-41-1.jpg",
       "images": [
         "assets/projects/feiyi/feiyi-41/feiyi-41-1.jpg",
         "assets/projects/feiyi/feiyi-41/feiyi-41-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "feiyi-42",
       "category": "feiyi",
       "category_name": "非遗",
       "subcategory": "藏雀灵",
+      "subcategory_name": "藏雀灵",
       "name": "少林护目贴",
       "thumb": "assets/projects/feiyi/feiyi-42/feiyi-42-1.jpg",
       "images": [
         "assets/projects/feiyi/feiyi-42/feiyi-42-1.jpg",
         "assets/projects/feiyi/feiyi-42/feiyi-42-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "feiyi-43",
       "category": "feiyi",
       "category_name": "非遗",
       "subcategory": "藏雀灵",
+      "subcategory_name": "藏雀灵",
       "name": "少林艾灸液",
       "thumb": "assets/projects/feiyi/feiyi-43/feiyi-43-1.jpg",
       "images": [
@@ -656,41 +812,46 @@
         "assets/projects/feiyi/feiyi-43/feiyi-43-2.jpg",
         "assets/projects/feiyi/feiyi-43/feiyi-43-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "feiyi-44",
       "category": "feiyi",
       "category_name": "非遗",
       "subcategory": "藏雀灵",
+      "subcategory_name": "藏雀灵",
       "name": "少林金刚葫芦足浴液",
       "thumb": "assets/projects/feiyi/feiyi-44/feiyi-44-1.jpg",
       "images": [
         "assets/projects/feiyi/feiyi-44/feiyi-44-1.jpg",
         "assets/projects/feiyi/feiyi-44/feiyi-44-2.jpg",
-        "assets/projects/feiyi/feiyi-44/feiyi-44-3.jpg"
+        "assets/projects/feiyi/feiyi-44/feiyi-44-3.jpg",
+        "assets/projects/feiyi/feiyi-44/feiyi-44-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "feiyi-45",
       "category": "feiyi",
       "category_name": "非遗",
       "subcategory": "藏雀灵",
+      "subcategory_name": "藏雀灵",
       "name": "禅医达摩经络贴",
       "thumb": "assets/projects/feiyi/feiyi-45/feiyi-45-1.jpg",
       "images": [
         "assets/projects/feiyi/feiyi-45/feiyi-45-1.jpg",
         "assets/projects/feiyi/feiyi-45/feiyi-45-2.jpg",
-        "assets/projects/feiyi/feiyi-45/feiyi-45-3.jpg"
+        "assets/projects/feiyi/feiyi-45/feiyi-45-3.jpg",
+        "assets/projects/feiyi/feiyi-45/feiyi-45-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "feiyi-46",
       "category": "feiyi",
       "category_name": "非遗",
       "subcategory": "谢锡亮",
+      "subcategory_name": "谢锡亮",
       "name": "山参姜黄足腹贴",
       "thumb": "assets/projects/feiyi/feiyi-46/feiyi-46-1.jpg",
       "images": [
@@ -698,13 +859,14 @@
         "assets/projects/feiyi/feiyi-46/feiyi-46-2.jpg",
         "assets/projects/feiyi/feiyi-46/feiyi-46-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "feiyi-47",
       "category": "feiyi",
       "category_name": "非遗",
       "subcategory": "谢锡亮",
+      "subcategory_name": "谢锡亮",
       "name": "木香泽泻贴",
       "thumb": "assets/projects/feiyi/feiyi-47/feiyi-47-1.jpg",
       "images": [
@@ -712,26 +874,28 @@
         "assets/projects/feiyi/feiyi-47/feiyi-47-2.jpg",
         "assets/projects/feiyi/feiyi-47/feiyi-47-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "feiyi-48",
       "category": "feiyi",
       "category_name": "非遗",
       "subcategory": "谢锡亮",
+      "subcategory_name": "谢锡亮",
       "name": "艾灸液",
       "thumb": "assets/projects/feiyi/feiyi-48/feiyi-48-1.jpg",
       "images": [
         "assets/projects/feiyi/feiyi-48/feiyi-48-1.jpg",
         "assets/projects/feiyi/feiyi-48/feiyi-48-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "refu-49",
       "category": "refu",
       "category_name": "热敷&按摩仪器",
       "subcategory": "按摩仪器",
+      "subcategory_name": "按摩仪器",
       "name": "拔罐器",
       "thumb": "assets/projects/refu/refu-49/refu-49-1.jpg",
       "images": [
@@ -739,27 +903,30 @@
         "assets/projects/refu/refu-49/refu-49-2.jpg",
         "assets/projects/refu/refu-49/refu-49-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "refu-50",
       "category": "refu",
       "category_name": "热敷&按摩仪器",
       "subcategory": "按摩仪器",
+      "subcategory_name": "按摩仪器",
       "name": "桃花灸",
       "thumb": "assets/projects/refu/refu-50/refu-50-1.jpg",
       "images": [
         "assets/projects/refu/refu-50/refu-50-1.jpg",
         "assets/projects/refu/refu-50/refu-50-2.jpg",
-        "assets/projects/refu/refu-50/refu-50-3.jpg"
+        "assets/projects/refu/refu-50/refu-50-3.jpg",
+        "assets/projects/refu/refu-50/refu-50-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "refu-51",
       "category": "refu",
       "category_name": "热敷&按摩仪器",
       "subcategory": "按摩仪器",
+      "subcategory_name": "按摩仪器",
       "name": "滚轮按摩艾灸仪",
       "thumb": "assets/projects/refu/refu-51/refu-51-1.jpg",
       "images": [
@@ -767,92 +934,100 @@
         "assets/projects/refu/refu-51/refu-51-2.jpg",
         "assets/projects/refu/refu-51/refu-51-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "refu-52",
       "category": "refu",
       "category_name": "热敷&按摩仪器",
       "subcategory": "热敷",
+      "subcategory_name": "热敷",
       "name": "小悬灸",
       "thumb": "assets/projects/refu/refu-52/refu-52-1.jpg",
       "images": [
         "assets/projects/refu/refu-52/refu-52-1.jpg",
         "assets/projects/refu/refu-52/refu-52-2.jpg",
-        "assets/projects/refu/refu-52/refu-52-3.jpg"
+        "assets/projects/refu/refu-52/refu-52-3.jpg",
+        "assets/projects/refu/refu-52/refu-52-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "refu-53",
       "category": "refu",
       "category_name": "热敷&按摩仪器",
       "subcategory": "热敷",
+      "subcategory_name": "热敷",
       "name": "新型艾灸草本热敷垫（绸缎款）",
       "thumb": "assets/projects/refu/refu-53/refu-53-1.jpg",
       "images": [
         "assets/projects/refu/refu-53/refu-53-1.jpg",
         "assets/projects/refu/refu-53/refu-53-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "refu-54",
       "category": "refu",
       "category_name": "热敷&按摩仪器",
       "subcategory": "热敷",
+      "subcategory_name": "热敷",
       "name": "新型草本艾灸热敷毯",
       "thumb": "assets/projects/refu/refu-54/refu-54-1.jpg",
       "images": [
         "assets/projects/refu/refu-54/refu-54-1.jpg",
         "assets/projects/refu/refu-54/refu-54-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "refu-55",
       "category": "refu",
       "category_name": "热敷&按摩仪器",
       "subcategory": "热敷",
+      "subcategory_name": "热敷",
       "name": "新艾灸草本热敷垫",
       "thumb": "assets/projects/refu/refu-55/refu-55-1.jpg",
       "images": [
         "assets/projects/refu/refu-55/refu-55-1.jpg",
         "assets/projects/refu/refu-55/refu-55-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "refu-56",
       "category": "refu",
       "category_name": "热敷&按摩仪器",
       "subcategory": "热敷",
+      "subcategory_name": "热敷",
       "name": "肩颈热敷包",
       "thumb": "assets/projects/refu/refu-56/refu-56-1.jpg",
       "images": [
         "assets/projects/refu/refu-56/refu-56-1.jpg",
         "assets/projects/refu/refu-56/refu-56-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "refu-57",
       "category": "refu",
       "category_name": "热敷&按摩仪器",
       "subcategory": "热敷",
+      "subcategory_name": "热敷",
       "name": "藿香安睡枕",
       "thumb": "assets/projects/refu/refu-57/refu-57-1.jpg",
       "images": [
         "assets/projects/refu/refu-57/refu-57-1.jpg",
         "assets/projects/refu/refu-57/refu-57-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "gaotie-58",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "丸",
+      "subcategory_name": "丸",
       "name": "艾草除臭泡脚丸",
       "thumb": "assets/projects/gaotie/gaotie-58/gaotie-58-1.jpg",
       "images": [
@@ -860,41 +1035,48 @@
         "assets/projects/gaotie/gaotie-58/gaotie-58-2.jpg",
         "assets/projects/gaotie/gaotie-58/gaotie-58-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "gaotie-59",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "丸",
+      "subcategory_name": "丸",
       "name": "酸枣仁陈艾肚脐贴",
       "thumb": "assets/projects/gaotie/gaotie-59/gaotie-59-1.jpg",
       "images": [
         "assets/projects/gaotie/gaotie-59/gaotie-59-1.jpg",
         "assets/projects/gaotie/gaotie-59/gaotie-59-2.jpg",
-        "assets/projects/gaotie/gaotie-59/gaotie-59-3.jpg"
+        "assets/projects/gaotie/gaotie-59/gaotie-59-3.jpg",
+        "assets/projects/gaotie/gaotie-59/gaotie-59-4.jpg",
+        "assets/projects/gaotie/gaotie-59/gaotie-59-5.jpg"
       ],
-      "total_files": 5
+      "image_count": 5
     },
     {
       "id": "gaotie-60",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "液",
+      "subcategory_name": "液",
       "name": "儿童4效对症调理泡浴液",
       "thumb": "assets/projects/gaotie/gaotie-60/gaotie-60-1.jpg",
       "images": [
         "assets/projects/gaotie/gaotie-60/gaotie-60-1.jpg",
         "assets/projects/gaotie/gaotie-60/gaotie-60-2.jpg",
-        "assets/projects/gaotie/gaotie-60/gaotie-60-3.jpg"
+        "assets/projects/gaotie/gaotie-60/gaotie-60-3.jpg",
+        "assets/projects/gaotie/gaotie-60/gaotie-60-4.jpg",
+        "assets/projects/gaotie/gaotie-60/gaotie-60-5.jpg"
       ],
-      "total_files": 5
+      "image_count": 5
     },
     {
       "id": "gaotie-61",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "液",
+      "subcategory_name": "液",
       "name": "儿童草本除臭洗脚液",
       "thumb": "assets/projects/gaotie/gaotie-61/gaotie-61-1.jpg",
       "images": [
@@ -902,54 +1084,62 @@
         "assets/projects/gaotie/gaotie-61/gaotie-61-2.jpg",
         "assets/projects/gaotie/gaotie-61/gaotie-61-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "gaotie-62",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "液",
+      "subcategory_name": "液",
       "name": "北国雪松洗脚液",
       "thumb": "assets/projects/gaotie/gaotie-62/gaotie-62-1.jpg",
       "images": [
         "assets/projects/gaotie/gaotie-62/gaotie-62-1.jpg",
         "assets/projects/gaotie/gaotie-62/gaotie-62-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "gaotie-63",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "液",
+      "subcategory_name": "液",
       "name": "臻典古方瑶浴液",
       "thumb": "assets/projects/gaotie/gaotie-63/gaotie-63-1.jpg",
       "images": [
         "assets/projects/gaotie/gaotie-63/gaotie-63-1.jpg",
         "assets/projects/gaotie/gaotie-63/gaotie-63-2.jpg",
-        "assets/projects/gaotie/gaotie-63/gaotie-63-3.jpg"
+        "assets/projects/gaotie/gaotie-63/gaotie-63-3.jpg",
+        "assets/projects/gaotie/gaotie-63/gaotie-63-4.jpg",
+        "assets/projects/gaotie/gaotie-63/gaotie-63-5.jpg",
+        "assets/projects/gaotie/gaotie-63/gaotie-63-6.jpg"
       ],
-      "total_files": 6
+      "image_count": 6
     },
     {
       "id": "gaotie-64",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "液",
+      "subcategory_name": "液",
       "name": "花露水-白茶香型、花露水-栀子花香型、花露水-桂花香型",
       "thumb": "assets/projects/gaotie/gaotie-64/gaotie-64-1.jpg",
       "images": [
         "assets/projects/gaotie/gaotie-64/gaotie-64-1.jpg",
         "assets/projects/gaotie/gaotie-64/gaotie-64-2.jpg",
-        "assets/projects/gaotie/gaotie-64/gaotie-64-3.jpg"
+        "assets/projects/gaotie/gaotie-64/gaotie-64-3.jpg",
+        "assets/projects/gaotie/gaotie-64/gaotie-64-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "gaotie-65",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "膏",
+      "subcategory_name": "膏",
       "name": "儿童紫草膏",
       "thumb": "assets/projects/gaotie/gaotie-65/gaotie-65-1.jpg",
       "images": [
@@ -957,13 +1147,14 @@
         "assets/projects/gaotie/gaotie-65/gaotie-65-2.jpg",
         "assets/projects/gaotie/gaotie-65/gaotie-65-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "gaotie-66",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "膏",
+      "subcategory_name": "膏",
       "name": "婴儿舒缓护唇膏",
       "thumb": "assets/projects/gaotie/gaotie-66/gaotie-66-1.jpg",
       "images": [
@@ -971,13 +1162,14 @@
         "assets/projects/gaotie/gaotie-66/gaotie-66-2.jpg",
         "assets/projects/gaotie/gaotie-66/gaotie-66-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "gaotie-67",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "膏",
+      "subcategory_name": "膏",
       "name": "晕车膏",
       "thumb": "assets/projects/gaotie/gaotie-67/gaotie-67-1.jpg",
       "images": [
@@ -985,13 +1177,14 @@
         "assets/projects/gaotie/gaotie-67/gaotie-67-2.jpg",
         "assets/projects/gaotie/gaotie-67/gaotie-67-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "gaotie-68",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "膏",
+      "subcategory_name": "膏",
       "name": "水润倍护舒缓润唇膏",
       "thumb": "assets/projects/gaotie/gaotie-68/gaotie-68-1.jpg",
       "images": [
@@ -999,13 +1192,14 @@
         "assets/projects/gaotie/gaotie-68/gaotie-68-2.jpg",
         "assets/projects/gaotie/gaotie-68/gaotie-68-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "gaotie-69",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "贴",
+      "subcategory_name": "贴",
       "name": "三伏儿童温灸贴",
       "thumb": "assets/projects/gaotie/gaotie-69/gaotie-69-1.jpg",
       "images": [
@@ -1013,13 +1207,14 @@
         "assets/projects/gaotie/gaotie-69/gaotie-69-2.jpg",
         "assets/projects/gaotie/gaotie-69/gaotie-69-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "gaotie-70",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "贴",
+      "subcategory_name": "贴",
       "name": "儿童紫草舒缓贴",
       "thumb": "assets/projects/gaotie/gaotie-70/gaotie-70-1.jpg",
       "images": [
@@ -1027,65 +1222,70 @@
         "assets/projects/gaotie/gaotie-70/gaotie-70-2.jpg",
         "assets/projects/gaotie/gaotie-70/gaotie-70-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "gaotie-71",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "贴",
+      "subcategory_name": "贴",
       "name": "别蚊我植物精油贴",
       "thumb": "assets/projects/gaotie/gaotie-71/gaotie-71-1.jpg",
       "images": [
         "assets/projects/gaotie/gaotie-71/gaotie-71-1.jpg",
         "assets/projects/gaotie/gaotie-71/gaotie-71-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "gaotie-72",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "贴",
+      "subcategory_name": "贴",
       "name": "参术艾姜小儿温灸贴",
       "thumb": "assets/projects/gaotie/gaotie-72/gaotie-72-1.jpg",
       "images": [
         "assets/projects/gaotie/gaotie-72/gaotie-72-1.jpg",
         "assets/projects/gaotie/gaotie-72/gaotie-72-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "gaotie-73",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "贴",
+      "subcategory_name": "贴",
       "name": "吴茱萸艾草生姜足贴",
       "thumb": "assets/projects/gaotie/gaotie-73/gaotie-73-1.jpg",
       "images": [
         "assets/projects/gaotie/gaotie-73/gaotie-73-1.jpg",
         "assets/projects/gaotie/gaotie-73/gaotie-73-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "gaotie-74",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "贴",
+      "subcategory_name": "贴",
       "name": "姜黄草本舒足贴",
       "thumb": "assets/projects/gaotie/gaotie-74/gaotie-74-1.jpg",
       "images": [
         "assets/projects/gaotie/gaotie-74/gaotie-74-1.jpg",
         "assets/projects/gaotie/gaotie-74/gaotie-74-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "gaotie-75",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "贴",
+      "subcategory_name": "贴",
       "name": "小儿草本温灸贴",
       "thumb": "assets/projects/gaotie/gaotie-75/gaotie-75-1.jpg",
       "images": [
@@ -1093,40 +1293,44 @@
         "assets/projects/gaotie/gaotie-75/gaotie-75-2.jpg",
         "assets/projects/gaotie/gaotie-75/gaotie-75-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "gaotie-76",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "贴",
+      "subcategory_name": "贴",
       "name": "小鼻侠贴",
       "thumb": "assets/projects/gaotie/gaotie-76/gaotie-76-1.jpg",
       "images": [
         "assets/projects/gaotie/gaotie-76/gaotie-76-1.jpg",
         "assets/projects/gaotie/gaotie-76/gaotie-76-2.jpg",
-        "assets/projects/gaotie/gaotie-76/gaotie-76-3.jpg"
+        "assets/projects/gaotie/gaotie-76/gaotie-76-3.jpg",
+        "assets/projects/gaotie/gaotie-76/gaotie-76-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "gaotie-77",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "贴",
+      "subcategory_name": "贴",
       "name": "户外高温暖贴",
       "thumb": "assets/projects/gaotie/gaotie-77/gaotie-77-1.jpg",
       "images": [
         "assets/projects/gaotie/gaotie-77/gaotie-77-1.jpg",
         "assets/projects/gaotie/gaotie-77/gaotie-77-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "gaotie-78",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "贴",
+      "subcategory_name": "贴",
       "name": "氨糖软骨素精油热敷护膝宝",
       "thumb": "assets/projects/gaotie/gaotie-78/gaotie-78-1.jpg",
       "images": [
@@ -1134,27 +1338,30 @@
         "assets/projects/gaotie/gaotie-78/gaotie-78-2.jpg",
         "assets/projects/gaotie/gaotie-78/gaotie-78-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "gaotie-79",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "贴",
+      "subcategory_name": "贴",
       "name": "润目贴",
       "thumb": "assets/projects/gaotie/gaotie-79/gaotie-79-1.jpg",
       "images": [
         "assets/projects/gaotie/gaotie-79/gaotie-79-1.jpg",
         "assets/projects/gaotie/gaotie-79/gaotie-79-2.jpg",
-        "assets/projects/gaotie/gaotie-79/gaotie-79-3.jpg"
+        "assets/projects/gaotie/gaotie-79/gaotie-79-3.jpg",
+        "assets/projects/gaotie/gaotie-79/gaotie-79-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "gaotie-80",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "贴",
+      "subcategory_name": "贴",
       "name": "红景天宫暖贴",
       "thumb": "assets/projects/gaotie/gaotie-80/gaotie-80-1.jpg",
       "images": [
@@ -1162,65 +1369,70 @@
         "assets/projects/gaotie/gaotie-80/gaotie-80-2.jpg",
         "assets/projects/gaotie/gaotie-80/gaotie-80-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "gaotie-81",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "贴",
+      "subcategory_name": "贴",
       "name": "红花桂枝防风暖贴",
       "thumb": "assets/projects/gaotie/gaotie-81/gaotie-81-1.jpg",
       "images": [
         "assets/projects/gaotie/gaotie-81/gaotie-81-1.jpg",
         "assets/projects/gaotie/gaotie-81/gaotie-81-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "gaotie-82",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "贴",
+      "subcategory_name": "贴",
       "name": "老北京艾姜草本足贴",
       "thumb": "assets/projects/gaotie/gaotie-82/gaotie-82-1.jpg",
       "images": [
         "assets/projects/gaotie/gaotie-82/gaotie-82-1.jpg",
         "assets/projects/gaotie/gaotie-82/gaotie-82-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "gaotie-83",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "贴",
+      "subcategory_name": "贴",
       "name": "草本暖身贴",
       "thumb": "assets/projects/gaotie/gaotie-83/gaotie-83-1.jpg",
       "images": [
         "assets/projects/gaotie/gaotie-83/gaotie-83-1.jpg",
         "assets/projects/gaotie/gaotie-83/gaotie-83-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "gaotie-84",
       "category": "gaotie",
-      "category_name": "膏&丸&贴&液",
+      "category_name": "膏/丸/贴/液",
       "subcategory": "贴",
+      "subcategory_name": "贴",
       "name": "黑姜蝶引七星贴",
       "thumb": "assets/projects/gaotie/gaotie-84/gaotie-84-1.jpg",
       "images": [
         "assets/projects/gaotie/gaotie-84/gaotie-84-1.jpg",
         "assets/projects/gaotie/gaotie-84/gaotie-84-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "yanzhao-85",
       "category": "yanzhao",
       "category_name": "眼罩",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "十二辰养蒸汽热敷眼罩",
       "thumb": "assets/projects/yanzhao/yanzhao-85/yanzhao-85-1.jpg",
       "images": [
@@ -1228,40 +1440,44 @@
         "assets/projects/yanzhao/yanzhao-85/yanzhao-85-2.jpg",
         "assets/projects/yanzhao/yanzhao-85/yanzhao-85-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "yanzhao-86",
       "category": "yanzhao",
       "category_name": "眼罩",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "叶黄素蒸汽眼罩",
       "thumb": "assets/projects/yanzhao/yanzhao-86/yanzhao-86-1.jpg",
       "images": [
         "assets/projects/yanzhao/yanzhao-86/yanzhao-86-1.jpg",
         "assets/projects/yanzhao/yanzhao-86/yanzhao-86-2.jpg",
-        "assets/projects/yanzhao/yanzhao-86/yanzhao-86-3.jpg"
+        "assets/projects/yanzhao/yanzhao-86/yanzhao-86-3.jpg",
+        "assets/projects/yanzhao/yanzhao-86/yanzhao-86-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "yanzhao-87",
       "category": "yanzhao",
       "category_name": "眼罩",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "沉香蒸汽安眠眼罩",
       "thumb": "assets/projects/yanzhao/yanzhao-87/yanzhao-87-1.jpg",
       "images": [
         "assets/projects/yanzhao/yanzhao-87/yanzhao-87-1.jpg",
         "assets/projects/yanzhao/yanzhao-87/yanzhao-87-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "yanzhao-88",
       "category": "yanzhao",
       "category_name": "眼罩",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "睛明麋鹿蒸汽热敷眼罩",
       "thumb": "assets/projects/yanzhao/yanzhao-88/yanzhao-88-1.jpg",
       "images": [
@@ -1269,55 +1485,63 @@
         "assets/projects/yanzhao/yanzhao-88/yanzhao-88-2.jpg",
         "assets/projects/yanzhao/yanzhao-88/yanzhao-88-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "jingyou-89",
       "category": "jingyou",
       "category_name": "精油",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "儿童草本养护精油",
       "thumb": "assets/projects/jingyou/jingyou-89/jingyou-89-1.jpg",
       "images": [
         "assets/projects/jingyou/jingyou-89/jingyou-89-1.jpg",
         "assets/projects/jingyou/jingyou-89/jingyou-89-2.jpg",
-        "assets/projects/jingyou/jingyou-89/jingyou-89-3.jpg"
+        "assets/projects/jingyou/jingyou-89/jingyou-89-3.jpg",
+        "assets/projects/jingyou/jingyou-89/jingyou-89-4.jpg",
+        "assets/projects/jingyou/jingyou-89/jingyou-89-5.jpg"
       ],
-      "total_files": 5
+      "image_count": 5
     },
     {
       "id": "jingyou-90",
       "category": "jingyou",
       "category_name": "精油",
       "subcategory": null,
+      "subcategory_name": null,
       "name": "姜艾伏湿泡脚凝珠",
       "thumb": "assets/projects/jingyou/jingyou-90/jingyou-90-1.jpg",
       "images": [
         "assets/projects/jingyou/jingyou-90/jingyou-90-1.jpg",
         "assets/projects/jingyou/jingyou-90/jingyou-90-2.jpg",
-        "assets/projects/jingyou/jingyou-90/jingyou-90-3.jpg"
+        "assets/projects/jingyou/jingyou-90/jingyou-90-3.jpg",
+        "assets/projects/jingyou/jingyou-90/jingyou-90-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "lianhe-91",
       "category": "lianhe",
       "category_name": "其他联合创作",
       "subcategory": "其他",
+      "subcategory_name": "其他",
       "name": "木叁堂 艾姜花椒足浴球",
       "thumb": "assets/projects/lianhe/lianhe-91/lianhe-91-1.jpg",
       "images": [
         "assets/projects/lianhe/lianhe-91/lianhe-91-1.jpg",
         "assets/projects/lianhe/lianhe-91/lianhe-91-2.jpg",
-        "assets/projects/lianhe/lianhe-91/lianhe-91-3.jpg"
+        "assets/projects/lianhe/lianhe-91/lianhe-91-3.jpg",
+        "assets/projects/lianhe/lianhe-91/lianhe-91-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "lianhe-92",
       "category": "lianhe",
       "category_name": "其他联合创作",
       "subcategory": "其他",
+      "subcategory_name": "其他",
       "name": "海氏海诺 草本脚臭喷剂",
       "thumb": "assets/projects/lianhe/lianhe-92/lianhe-92-1.jpg",
       "images": [
@@ -1325,13 +1549,14 @@
         "assets/projects/lianhe/lianhe-92/lianhe-92-2.jpg",
         "assets/projects/lianhe/lianhe-92/lianhe-92-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "lianhe-93",
       "category": "lianhe",
       "category_name": "其他联合创作",
       "subcategory": "其他",
+      "subcategory_name": "其他",
       "name": "添益时刻 二十八味足浴包",
       "thumb": "assets/projects/lianhe/lianhe-93/lianhe-93-1.jpg",
       "images": [
@@ -1339,13 +1564,14 @@
         "assets/projects/lianhe/lianhe-93/lianhe-93-2.jpg",
         "assets/projects/lianhe/lianhe-93/lianhe-93-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "lianhe-94",
       "category": "lianhe",
       "category_name": "其他联合创作",
       "subcategory": "其他",
+      "subcategory_name": "其他",
       "name": "玉有堂足浴包",
       "thumb": "assets/projects/lianhe/lianhe-94/lianhe-94-1.jpg",
       "images": [
@@ -1353,13 +1579,14 @@
         "assets/projects/lianhe/lianhe-94/lianhe-94-2.jpg",
         "assets/projects/lianhe/lianhe-94/lianhe-94-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "lianhe-95",
       "category": "lianhe",
       "category_name": "其他联合创作",
       "subcategory": "其他",
+      "subcategory_name": "其他",
       "name": "褥樂康×美迪博士 抑菌膏",
       "thumb": "assets/projects/lianhe/lianhe-95/lianhe-95-1.jpg",
       "images": [
@@ -1367,27 +1594,30 @@
         "assets/projects/lianhe/lianhe-95/lianhe-95-2.jpg",
         "assets/projects/lianhe/lianhe-95/lianhe-95-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "lianhe-96",
       "category": "lianhe",
       "category_name": "其他联合创作",
       "subcategory": "养小全",
+      "subcategory_name": "养小全",
       "name": "甘遂山楂贴、姜黄三七贴、独活透骨贴",
       "thumb": "assets/projects/lianhe/lianhe-96/lianhe-96-1.jpg",
       "images": [
         "assets/projects/lianhe/lianhe-96/lianhe-96-1.jpg",
         "assets/projects/lianhe/lianhe-96/lianhe-96-2.jpg",
-        "assets/projects/lianhe/lianhe-96/lianhe-96-3.jpg"
+        "assets/projects/lianhe/lianhe-96/lianhe-96-3.jpg",
+        "assets/projects/lianhe/lianhe-96/lianhe-96-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "lianhe-97",
       "category": "lianhe",
       "category_name": "其他联合创作",
       "subcategory": "养小全",
+      "subcategory_name": "养小全",
       "name": "艾莲百合足浴液",
       "thumb": "assets/projects/lianhe/lianhe-97/lianhe-97-1.jpg",
       "images": [
@@ -1395,99 +1625,107 @@
         "assets/projects/lianhe/lianhe-97/lianhe-97-2.jpg",
         "assets/projects/lianhe/lianhe-97/lianhe-97-3.jpg"
       ],
-      "total_files": 3
+      "image_count": 3
     },
     {
       "id": "lianhe-98",
       "category": "lianhe",
       "category_name": "其他联合创作",
       "subcategory": "葵花",
+      "subcategory_name": "葵花",
       "name": "儿童泡浴包",
       "thumb": "assets/projects/lianhe/lianhe-98/lianhe-98-1.jpg",
       "images": [
         "assets/projects/lianhe/lianhe-98/lianhe-98-1.jpg",
         "assets/projects/lianhe/lianhe-98/lianhe-98-2.jpg",
-        "assets/projects/lianhe/lianhe-98/lianhe-98-3.jpg"
+        "assets/projects/lianhe/lianhe-98/lianhe-98-3.jpg",
+        "assets/projects/lianhe/lianhe-98/lianhe-98-4.jpg"
       ],
-      "total_files": 4
+      "image_count": 4
     },
     {
       "id": "lianhe-99",
       "category": "lianhe",
       "category_name": "其他联合创作",
       "subcategory": "葵花",
+      "subcategory_name": "葵花",
       "name": "儿童腺样体贴",
       "thumb": "assets/projects/lianhe/lianhe-99/lianhe-99-1.jpg",
       "images": [
         "assets/projects/lianhe/lianhe-99/lianhe-99-1.jpg",
         "assets/projects/lianhe/lianhe-99/lianhe-99-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "lianhe-100",
       "category": "lianhe",
       "category_name": "其他联合创作",
       "subcategory": "葵花",
+      "subcategory_name": "葵花",
       "name": "水蜜桃除螨喷雾",
       "thumb": "assets/projects/lianhe/lianhe-100/lianhe-100-1.jpg",
       "images": [
         "assets/projects/lianhe/lianhe-100/lianhe-100-1.jpg",
         "assets/projects/lianhe/lianhe-100/lianhe-100-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "lianhe-101",
       "category": "lianhe",
       "category_name": "其他联合创作",
       "subcategory": "赛伦博士",
+      "subcategory_name": "赛伦博士",
       "name": "灰甲液",
       "thumb": "assets/projects/lianhe/lianhe-101/lianhe-101-1.jpg",
       "images": [
         "assets/projects/lianhe/lianhe-101/lianhe-101-1.jpg",
         "assets/projects/lianhe/lianhe-101/lianhe-101-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "lianhe-102",
       "category": "lianhe",
       "category_name": "其他联合创作",
       "subcategory": "赛伦博士",
+      "subcategory_name": "赛伦博士",
       "name": "肩周保健贴",
       "thumb": "assets/projects/lianhe/lianhe-102/lianhe-102-1.jpg",
       "images": [
         "assets/projects/lianhe/lianhe-102/lianhe-102-1.jpg",
         "assets/projects/lianhe/lianhe-102/lianhe-102-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "lianhe-103",
       "category": "lianhe",
       "category_name": "其他联合创作",
       "subcategory": "赛伦博士",
+      "subcategory_name": "赛伦博士",
       "name": "腰椎保健贴",
       "thumb": "assets/projects/lianhe/lianhe-103/lianhe-103-1.jpg",
       "images": [
         "assets/projects/lianhe/lianhe-103/lianhe-103-1.jpg",
         "assets/projects/lianhe/lianhe-103/lianhe-103-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     },
     {
       "id": "lianhe-104",
       "category": "lianhe",
       "category_name": "其他联合创作",
       "subcategory": "赛伦博士",
+      "subcategory_name": "赛伦博士",
       "name": "颈椎保健贴",
       "thumb": "assets/projects/lianhe/lianhe-104/lianhe-104-1.jpg",
       "images": [
         "assets/projects/lianhe/lianhe-104/lianhe-104-1.jpg",
         "assets/projects/lianhe/lianhe-104/lianhe-104-2.jpg"
       ],
-      "total_files": 2
+      "image_count": 2
     }
   ]
 }

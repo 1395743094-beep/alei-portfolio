@@ -3,40 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>作品分类 · 啊lei啊lei 2026 作品集</title>
+<title>作品 · 啊lei啊lei 2026 作品集</title>
 <meta name="description" content="啊lei啊lei 作品分类浏览 — 10 大分类、104 个大健康产品视觉项目。">
 <link rel="stylesheet" href="assets/css/style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23070a0d'/><text x='50' y='68' font-size='52' font-family='monospace' font-weight='bold' text-anchor='middle' fill='%2322d3ee'>ALL</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23f5f5f7'/><text x='50' y='70' font-size='44' font-family='-apple-system' font-weight='700' text-anchor='middle' fill='%230071e3'>ALL</text></svg>">
 </head>
 <body>
 
 <nav class="nav">
   <div class="wrap">
-    <a href="index.html" class="brand">
-      <span class="logo">ALL</span>
-      <span class="sub">/ 啊lei啊lei · HEALTH VISUAL · 2026</span>
-    </a>
+    <a href="index.html" class="brand"><span class="logo">啊lei啊lei</span><span class="sub">作品集 · 2026</span></a>
     <div class="menu" id="menu">
       <a href="index.html">首页</a>
-      <a href="category.html" class="active">作品分类</a>
-      <a href="about.html">关于我</a>
+      <a href="category.html" class="active">作品</a>
+      <a href="about.html">关于</a>
       <a href="contact.html">联系</a>
-      <a href="index.html" class="btn-pdf">← 返回首页</a>
+      <a href="index.html" class="nav-cta">返回首页</a>
     </div>
     <div class="burger" id="burger"><span></span><span></span><span></span></div>
   </div>
 </nav>
 
 <div class="page-head">
-  <div class="wrap">
-    <div class="crumb"><a href="index.html">HOME</a> / CATEGORY INDEX</div>
-    <h1>作品分类浏览
-      <span class="en">PROJECT ARCHIVE · FILTER BY CATEGORY</span>
-    </h1>
-    <div class="filter-bar" id="filter-bar">
-      <div class="loader"><div class="spin"></div></div>
-    </div>
-  </div>
+  <div class="crumb"><a href="index.html">首页</a> › 作品</div>
+  <h1>作品</h1>
+  <p class="sub" id="page-sub">104 个项目 · 10 大分类 · 314 张精选视觉</p>
+  <div class="filter-bar" id="filter-bar"><div class="loader"><div class="spin"></div></div></div>
+  <div class="sub-filter" id="sub-filter"></div>
 </div>
 
 <div class="wrap">
@@ -45,7 +38,7 @@
 
 <footer>
   <div class="wrap">
-    <div class="copy">啊lei啊lei © 2026 · HEALTH PRODUCT VISUAL · ALL RIGHTS RESERVED</div>
+    <div class="copy">© 2026 啊lei啊lei · 大健康产品视觉设计</div>
     <div class="flinks">
       <a href="index.html">首页</a>
       <a href="category.html">作品</a>
@@ -61,56 +54,68 @@ PORTFOLIO.ready(function () {
   const D = PORTFOLIO.data;
   const grid = document.getElementById('proj-grid');
   const bar = document.getElementById('filter-bar');
+  const subBar = document.getElementById('sub-filter');
+  const pageSub = document.getElementById('page-sub');
 
-  function getQueryCat() {
-    const p = new URLSearchParams(location.search);
-    return p.get('category') || 'all';
-  }
-  let active = getQueryCat();
+  let active = new URLSearchParams(location.search).get('category') || 'all';
+  let activeSub = 'all';
 
   function renderBar() {
     const all = D.projects.length;
-    let html = '<div class="chip' + (active === 'all' ? ' active' : '') + '" data-cat="all">全部 <b>' + all + '</b></div>';
-    D.categories.forEach(function (c) {
-      const cnt = D.projects.filter(function (p) { return p.category === c.id; }).length;
-      html += '<div class="chip' + (active === c.id ? ' active' : '') + '" data-cat="' + c.id + '">' + c.name + ' <b>' + cnt + '</b></div>';
+    let html = '<div class="chip' + (active === 'all' ? ' active' : '') + '" data-cat="all">全部 <span class="count">' + all + '</span></div>';
+    D.categories.forEach(c => {
+      const cnt = D.projects.filter(p => p.category === c.id).length;
+      html += '<div class="chip' + (active === c.id ? ' active' : '') + '" data-cat="' + c.id + '">' + c.name + ' <span class="count">' + cnt + '</span></div>';
     });
     bar.innerHTML = html;
-    bar.querySelectorAll('.chip').forEach(function (chip) {
-      chip.addEventListener('click', function () {
-        active = chip.dataset.cat;
-        const url = active === 'all' ? 'category.html' : 'category.html?category=' + active;
-        history.replaceState(null, '', url);
-        renderBar();
-        renderGrid();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
+    bar.querySelectorAll('.chip').forEach(chip => chip.addEventListener('click', () => {
+      active = chip.dataset.cat; activeSub = 'all';
+      const url = active === 'all' ? 'category.html' : 'category.html?category=' + active;
+      history.replaceState(null, '', url);
+      renderBar(); renderSub(); renderGrid();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }));
+  }
+
+  function renderSub() {
+    if (active === 'all') { subBar.innerHTML = ''; return; }
+    const cat = PORTFOLIO.catMeta(active);
+    const subs = (cat && cat.subcategories) || [];
+    if (!subs.length) { subBar.innerHTML = ''; return; }
+    let html = '<div class="sub-chip' + (activeSub === 'all' ? ' active' : '') + '" data-sub="all">全部</div>';
+    subs.forEach(s => {
+      const cnt = D.projects.filter(p => p.category === active && p.subcategory === s.id).length;
+      html += '<div class="sub-chip' + (activeSub === s.id ? ' active' : '') + '" data-sub="' + s.id + '">' + s.name + ' ' + cnt + '</div>';
     });
+    subBar.innerHTML = html;
+    subBar.querySelectorAll('.sub-chip').forEach(chip => chip.addEventListener('click', () => {
+      activeSub = chip.dataset.sub; renderSub(); renderGrid();
+    }));
   }
 
   function renderGrid() {
-    const list = PORTFOLIO.byCat(active);
-    if (!list.length) { grid.innerHTML = '<div class="empty">NO PROJECTS IN THIS CATEGORY</div>'; return; }
+    let list = PORTFOLIO.byCat(active);
+    if (active !== 'all' && activeSub !== 'all') list = list.filter(p => p.subcategory === activeSub);
     const meta = active === 'all' ? null : PORTFOLIO.catMeta(active);
-    grid.innerHTML = list.map(function (p, i) {
+    pageSub.textContent = list.length + ' 个项目' + (meta ? ' · ' + meta.name : '') + ' · ' + list.reduce((a, p) => a + p.image_count, 0) + ' 张视觉';
+    if (!list.length) { grid.innerHTML = '<div class="empty">该分类暂无项目</div>'; return; }
+    grid.innerHTML = list.map((p, i) => {
       const cat = PORTFOLIO.catMeta(p.category);
+      const scTag = p.subcategory_name ? '<span class="sc-tag">' + PORTFOLIO.esc(p.subcategory_name) + '</span>' : '';
       return '<a class="proj-card reveal" href="project.html?id=' + encodeURIComponent(p.id) + '" style="transition-delay:' + (i % 9 * 30) + 'ms">' +
-        '<div class="thumb-wrap">' +
-          '<img src="' + p.thumb + '" alt="' + PORTFOLIO.esc(p.name) + '" loading="lazy">' +
-          '<span class="badge">' + p.id.toUpperCase() + '</span>' +
-        '</div>' +
+        '<div class="thumb"><img src="' + p.thumb + '" alt="' + PORTFOLIO.esc(p.name) + '" loading="lazy"></div>' +
         '<div class="body">' +
-          '<div class="cat">' + cat.name + ' · ' + cat.name_en + '</div>' +
+          '<div class="cat">' + cat.name + '</div>' +
           '<h3>' + PORTFOLIO.esc(p.name) + '</h3>' +
-          '<div class="meta"><span>' + p.images.length + ' IMAGES</span><span class="view">查看详情 →</span></div>' +
+          scTag +
+          '<div class="meta"><span>' + p.image_count + ' 张</span><span class="view">查看</span></div>' +
         '</div>' +
       '</a>';
     }).join('');
     PORTFOLIO.initReveal();
   }
 
-  renderBar();
-  renderGrid();
+  renderBar(); renderSub(); renderGrid();
   PORTFOLIO.initNav();
 });
 </script>
